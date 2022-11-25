@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script> 
+<script>
+    var i, num, soma=0, media, maior=0, menor=99999999999999999999999, par=0, impar=0;
+
+    document.write('<hr> Realação dos Numeros <hr>');
+    alert('Informe 10 numeros inteiros');
+    for(i=1; i<=10; i++){
+       num = Number(prompt('Informe '+i+' o numero: '));
+
+       somar();
+       //calcmaior();
+       //calcmenor();
+       acharmaiormenor();
+       parimpar();
+       
+
+       document.write(num,'<br>');
+
+    }
+    calcularmedia();
+    document.write('<hr> Soma = ',soma,'<hr>');
+    document.write('<hr> Media = ',media,'<hr>');
+    document.write('<hr> Maior = ',maior,'<hr>');
+    document.write('<hr> Menor = ',menor,'<hr>');
+    document.write('<hr> Quantidade de numeros pares = ',par,'<hr>');
+    document.write('<hr> Quantidade de numeros impares = ',impar,'<hr>');
+    </script>

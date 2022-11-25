@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var i=0, np=0, media=0, n1, n2 ;
+    n1 = Number(prompt('informe o primeiro numero do intervalo'));
+    n2 = Number(prompt('informe o segundo numero do intervalo'));
+    document.write('Numero inicial ',n1,'<hr>');
+    document.write('Numero final ',n2,'<hr>');
+    i = n1;
+    while(i<= n2){
+        calcularpar();
+        qtdnumeros();
+        calcularmedia();
+        i++
+    }
+    media = media / np;
+    document.write('<hr>Quantidade de numeros Pares são: ',np);
+    document.write('<hr>A media dos numeros pares é de: ',media,'<hr>');
+    
+   
+</script>

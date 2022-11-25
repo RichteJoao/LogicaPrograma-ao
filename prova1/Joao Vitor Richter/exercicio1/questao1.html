@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var time, jog, idade, peso, alt, menor18 = 0, somaidade = 0, contidade = 0, mediaidade,
+    somaalt=0, contjog=0, mediaalt, jog80mais=0, porcent80;
+    document.write('<hr> Relatorio do Campeonato <hr>');
+    for (time = 1; time <= 5; time++) {
+        alert('informando dados do time ' + time)
+
+        for (jog = 1; jog <= 3; jog++) {
+            alert('informando dados do ' + jog + ' o jogador')
+            idade = Number(prompt('Imforme a idade do jogador'));
+            peso = Number(prompt('informe o peso do jogador'));
+            alt = Number(prompt('informe a altura do jogador'));
+
+            contmenor18();
+            somaridades();
+            contaridades();
+            
+            somaralturas();
+            contarjogadores();
+
+            contarjog80mais();
+
+        }
+        calcularmediaidadetime();
+        document.write('<b>Informaçoes do time', time, '</b><br>');
+        document.write('<p>a media de idades do ', time, ' é: ', mediaidade.toFixed(2),'<br></p>');
+        zerardados();
+    }
+    calcularmediaaltura();
+    calcularporcentagem();
+    document.write('<b> Informaçoes Gerais </b><br>');
+    document.write('<p>Quantidade com menos de 18 anos: ', menor18,'<br>');
+    document.write('A media de altura do campeonato e de: ',mediaalt.toFixed(2),'<br>');
+    document.write('A porcentagem de jogadores com mais de 80kg e de ',porcent80.toFixed(2),'%<br>');
+</script>

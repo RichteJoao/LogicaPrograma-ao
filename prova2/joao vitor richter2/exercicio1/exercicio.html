@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var Voto, i = 1, total, num = 1, c1 = 0, c2 = 0, c3 = 0, brancos = 0, nulos = 0,
+        totalc1 = 0, totalc2 = 0, totalc3 = 0, totalbrancos = 0, totalnulos = 0, totalvotantes = 0,
+        totalvalid = 0, totalinvalid = 0;
+    for (num > 0; num <= 5; num++) {
+        alert('para votar use esses numeros:\n A = 1\n B = 2\n C = 3\n Brancos = 4\n Nulos >= 5');
+        alert('digite os votos da seção', num);
+        for (i > 0; i <= 3; i++){
+            Voto = Number(prompt('diga o seu voto'));
+            votoA();
+            votoB();
+            votoC();
+            votobrancos();
+            votonulos();
+            totalvot();
+        }
+        document.write('informação da seção ',num, '<br>');
+        document.write('numeros de votos candidato A = ', c1, '<br>');
+        document.write('numeros de votos candidato B = ', c2, '<br>');
+        document.write('numeros de votos candidato C = ', c3, '<br>');
+        document.write('numeros de votos candidato Brancos = ', brancos, '<br>');
+        document.write('numeros de votos candidato Nulos = ', nulos, '<hr>');
+
+
+        totalvotosc1();
+        totalvotosc2();
+        totalvotosc3();
+        totalvotosbrancos();
+        totalvotosnulos();
+        totalvalidvotos();
+        totalbrancnulo();
+
+        zerar();
+    }
+    document.write('numeros total de votantes = ', totalvotantes, '<br>');
+    document.write('numeros total de votos candidato A = ', totalc1, '<br>');
+    document.write('numeros total de votos candidato B = ', totalc2, '<br>');
+    document.write('numeros total de votos candidato C = ', totalc3, '<br>');
+    document.write('numeros total de votos  Brancos = ', totalbrancos, '<br>');
+    document.write('numeros total de votos  Nulos = ', totalnulos, '<br>');
+    document.write('numeros total de votos validos = ', totalvalid, '<br>');
+    document.write('numeros total de votos invalidos = ', totalinvalid, '<hr>');
+    vencedor();
+    vencedor1();
+    vencedor2();
+    eleicoesvalidas()
+</script>
