@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var matriz = [], linhas = 2, colunas = 2, maiorvalor, matrizR;
+
+    matriz = preenchermatriz(linhas, colunas);
+
+    document.write('<hr> Matriz base <hr>');
+
+    exibirmatriz(matriz, linhas, colunas);
+
+    maiorvalor = acharmaior(matriz, linhas, colunas);
+
+    document.write('<hr><br> Maior Valor = ',maiorvalor,'<br>');
+
+    matrizR = gerarmatrizresultante(matriz,colunas,linhas,maiorvalor);
+
+    document.write('<hr>Matriz Resultante <hr>');
+
+    exibirmatriz(matrizR,linhas,colunas);
+
+
+
+</script>

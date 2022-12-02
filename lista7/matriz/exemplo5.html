@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script src="funcoes.js"></script>
+<script>
+    var matriz = [], linhas = 2, colunas = 2, somalinhas, somacolunas, somargeral;
+
+    matriz = preenchermatriz(linhas, colunas);
+
+    document.write('<hr> Matriz base <hr>');
+    exibirmatriz2(matriz, linhas, colunas);
+
+    somargeral = somarmatriz(matriz, linhas,colunas);
+    document.write('<hr> Soma Geral',somargeral,'<hr>');
+
+    somalinhas = somarlinhas(matriz,colunas,linhas);
+    exibirvetor(somalinhas);
+
+    //somarcolunas
+
+    </script>    
